@@ -1,0 +1,51 @@
+/************
+SHARES
+************/
+
+.shares {
+	background: $bg-grey;
+	padding: 70px 50px;
+}
+
+.shares__title {
+	margin-bottom: 70px;
+}
+
+.shares__features {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.shares__item {
+	max-width: 300px;
+	text-align: center;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transition: 0.3s;
+	margin-bottom: 30px;
+}
+
+.shares__item:hover {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.shares__item-bg {
+	background: url(../img/sharesitembg.png) no-repeat center top;
+	height: 300px;
+}
+
+.shares__item-text {
+	padding: 20px 60px;
+	background: $bg-green-light;
+	color: #fff;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transition: 0.3s;
+}
+
+.shares__item:hover .shares__item-text {
+	background: $bg-red-dark;
+}
+

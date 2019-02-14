@@ -1,0 +1,80 @@
+/************
+SPECIFICATION
+***********/
+
+body {
+	font-family: 'Roboto', sans-serif;		
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button {
+	font-size: 14px;
+	text-transform: uppercase;
+	border: none;
+	font-weight: 500;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+button:focus { 
+    outline: none; 
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.button_red {
+	background: none;
+	border: 2px solid #fff;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.button_red:hover {
+	background: none;
+	background: $bg-red-dark;
+	border: 2px solid $bg-red-dark;
+}
+
+h3, h2 {
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: $bg-green-dark;
+}
+
+h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+input {
+	color: #909090;
+	padding: 10px 15px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	background: #f8f8f8;
+}
+
+section {
+	padding: 70px 0;
+}

@@ -1,0 +1,86 @@
+/*********
+EVENTS
+*********/
+
+.events {
+	background: url(../img/eventsbg.png) no-repeat;
+	background-position: center top;
+	background-size: cover;
+	padding: 70px 0;
+}
+
+.events__features {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.events__item {
+	max-width: 300px;
+}
+
+.events__item-image {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	transform: scale(0.9);
+	transition: 0.3s;
+	margin: 0 auto 25px auto;
+}
+
+.events__item_first .events__item-image {
+	background: url(../img/circlebg1.png);
+	background-position: center top;
+}
+
+.events__item_second .events__item-image {
+	background: url(../img/circlebg2.png);
+	background-position: center top;
+}
+
+.events__item_third .events__item-image {
+	background: url(../img/circlebg3.png);
+	background-position: center top;
+}
+
+.events__item-text {
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+
+.events__item-title {
+	color: #000;
+	margin-bottom: 5px;
+	transition: 0.3s;
+}
+
+.events__item-subtitle {
+	color: #3f3f3f;
+	transition: 0.3s;
+}
+
+.events__item:hover .events__item-image {
+	transform: scale(1);
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+.events__item:hover .events__item-title {
+	color: $bg-green-dark;
+}
+
+.events__item:hover .events__item-subtitle {
+	color: $bg-green-light;
+}
+
+/*EVENTS RESPONSIVE*/
+
+@media screen and (max-width: 400px) {
+	.events__item-image {
+		height: 200px;
+		width: 200px;
+		background-size: 100%;
+	}
+}

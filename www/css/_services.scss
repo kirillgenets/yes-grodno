@@ -1,0 +1,122 @@
+/**************
+SERVICES
+************/
+
+.services {
+	background: $bg-grey;
+	padding: 70px 50px;
+}
+
+.services__title {
+	color: $bg-green-dark;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.services__features {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.services__item {
+	height: 300px;
+	padding: 30px 0;
+	width: 310px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	justify-content: space-between;
+	transition: 0.3s;
+	margin-bottom: 30px;
+}
+
+.services__item:hover {
+	background: $bg-green-dark;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
+.services__item-title {
+	max-width: 200px;
+	text-align: center;
+	color: $t-grey;
+	transition: 0.3s;
+}
+
+.services__item:hover .services__item-title {
+	color: #fff;
+}
+
+.services__list {
+	max-width: 250px;
+}
+
+.services__item:hover .services__list {
+	color: $bg-grey;
+}
+
+.services__list-item {
+	margin-bottom: 3px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.services__button {
+	background: $bg-green-dark;
+	flex-direction: flex-end;
+	color: $bg-grey;
+	padding: 10px 30px;
+	font-weight: 700;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transition: 0.3s;
+	border: 2px solid rgba(0,0,0,0);
+}
+
+.services__item:hover .services__button {
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.services__item:hover .services__button:hover {
+	border: 2px solid rgba(0,0,0,0);
+}
+
+.services__button:hover {
+	background: $bg-red-dark;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+/*SERVICES RESPONSIVE*/
+
+@media screen and (max-width: 550px) {
+	h2 {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.services {
+		padding: 30px 15px;
+	}
+
+	.services__list-item {
+		font-size: 12px;
+	}
+
+	.services__list {
+		max-width: 200px;
+	}
+}
