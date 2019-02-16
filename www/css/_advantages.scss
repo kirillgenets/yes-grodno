@@ -13,7 +13,7 @@ ADVANTAGES
 
 .advantages__features {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 260px));/*repeat(4, minmax(200px, 300px))*/;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
 	justify-items: center;
 	justify-content: center;
 	grid-gap: 50px;

@@ -459,8 +459,7 @@ ADVANTAGES
 
 .advantages__features {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 260px));
-  /*repeat(4, minmax(200px, 300px))*/
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
   justify-items: center;
   justify-content: center;
   grid-gap: 50px; }
@@ -482,6 +481,89 @@ ADVANTAGES
   font-weight: 700;
   color: #016c64; }
 
-/*RESPONSIVE*/
+/*********
+COMMENT
+*******/
+.comment {
+  padding: 70px 0; }
+
+.comment__title {
+  margin-bottom: 70px; }
+
+.comment__container {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1285px;
+  margin: 0 auto;
+  position: relative;
+  height: 50vh;
+  overflow: hidden; }
+
+.comment__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 10px; }
+
+.comment__item {
+  width: 300px;
+  text-align: center;
+  opacity: 0.5;
+  margin-right: 150px; }
+
+.comment__icon {
+  margin: 0 auto;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: url(../img/gbflag.png) no-repeat;
+  background-position: center;
+  background-size: 200%; }
+
+.comment__username {
+  font-weight: 400;
+  font-size: 14px; }
+
+.comment__icon, .comment__username {
+  margin-bottom: 15px; }
+
+.comment__text {
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+.comment__lines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 125px;
+  margin: 0 auto; }
+
+.comment__line {
+  transition: 0.2s; }
+
+.comment__line:hover {
+  transform: scale(1.2);
+  cursor: pointer; }
+
+/*ACTIVE ITEM*/
+.comment__item_active {
+  width: 400px;
+  opacity: 1; }
+
+.comment__item_active .comment__icon {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  height: 150px;
+  width: 150px; }
+
+.comment__item_active .comment__username {
+  font-size: 18px; }
+
+.comment__item_active .comment__text {
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
