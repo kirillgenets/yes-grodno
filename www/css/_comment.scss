@@ -4,6 +4,7 @@ COMMENT
 
 .comment {
 	padding: 70px 0;
+	background: $bg-grey;
 }
 
 .comment__title {
@@ -58,6 +59,8 @@ COMMENT
 	opacity: 0.5;
 }
 
+/*owl slider settings*/
+
 .owl-nav {
 	display: flex;
 	width: 130px;
@@ -74,7 +77,6 @@ COMMENT
 	transform: scale(1.2);
 }
 
-
 .center .comment__icon {
 	opacity: 1;
 	width: 150px;
@@ -90,4 +92,16 @@ COMMENT
 	opacity: 1;
 	font-size: 14px;
 	max-width: 400px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1025px) {
+	#comment__slider {
+		max-width: 350px;
+	}
+
+	.comment__item {
+		transform: scale(0.8);
+	}
 }

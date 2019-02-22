@@ -485,7 +485,8 @@ ADVANTAGES
 COMMENT
 *******/
 .comment {
-  padding: 70px 0; }
+  padding: 70px 0;
+  background: #ECECEC; }
 
 .comment__title {
   margin-bottom: 70px; }
@@ -532,6 +533,7 @@ COMMENT
   transition: 0.3s;
   opacity: 0.5; }
 
+/*owl slider settings*/
 .owl-nav {
   display: flex;
   width: 130px;
@@ -558,5 +560,107 @@ COMMENT
   opacity: 1;
   font-size: 14px;
   max-width: 400px; }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1025px) {
+  #comment__slider {
+    max-width: 350px; }
+
+  .comment__item {
+    transform: scale(0.8); } }
+/********
+CONTACTS
+**********/
+.contacts {
+  background: #016c64;
+  color: #fff; }
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.contacts__logo img {
+  width: 515px; }
+
+.contacts__info {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.contacts__social {
+  width: 300px;
+  text-align: center; }
+
+.contacts__phone {
+  margin-bottom: 60px; }
+
+.contacts__title {
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.contacts__text {
+  font-size: 14px; }
+
+.contacts__soc-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px; }
+
+.contacts__icon {
+  height: 35px;
+  width: 35px;
+  background-position: center; }
+
+.contacts__icon_ok {
+  background-image: url(../img/ok.png); }
+
+.contacts__icon_vk {
+  background-image: url(../img/vk.png); }
+
+.contacts__icon_fb {
+  background-image: url(../img/fb.png); }
+
+.contacts__icon_i {
+  background-image: url(../img/instagram.png); }
+
+.contacts__button {
+  padding: 15px 30px;
+  border-radius: 5px; }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1050px) {
+  .contacts__wrapper {
+    flex-direction: column;
+    align-items: center; }
+
+  .contacts__info {
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-between; }
+
+  .contacts__soc-icons {
+    margin-bottom: 50px; } }
+@media screen and (max-width: 1050px) {
+  .contacts__logo img {
+    width: 300px; }
+
+  .contacts__info {
+    width: auto;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center; }
+
+  .contacts__soc-icons {
+    margin-bottom: 20px; } }
+/********
+FOOTER
+******/
+.footer {
+  text-align: center;
+  padding: 25px 0; }
 
 /*# sourceMappingURL=style.css.map */
