@@ -62,20 +62,22 @@ EVENTS
 	transition: 0.3s;
 }
 
-.events__item:hover .events__item-image {
-	transform: scale(1);
-	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
-}
-
-.events__item:hover .events__item-title {
-	color: $bg-green-dark;
-}
-
-.events__item:hover .events__item-subtitle {
-	color: $bg-green-light;
-}
-
 /*EVENTS RESPONSIVE*/
+
+@media screen and (min-width: 1024px) {
+	.events__item:hover .events__item-image {
+		transform: scale(1);
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+	}
+
+	.events__item:hover .events__item-title {
+		color: $bg-green-dark;
+	}
+
+	.events__item:hover .events__item-subtitle {
+		color: $bg-green-light;
+	}
+}
 
 @media screen and (max-width: 400px) {
 	.events__item-image {

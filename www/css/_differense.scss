@@ -1,0 +1,87 @@
+/***********
+DIFFERENSE
+*************/
+
+.differense {
+	background-color: $bg-grey;
+}
+
+.differense__title {
+	margin-bottom: 70px;
+}
+
+.differense__features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.differense__item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.differense__item-title {
+	text-transform: uppercase;
+	color: $bg-red-dark;
+	margin-bottom: 30px;
+}
+
+.differense__text {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 8px;
+	max-width: 1025px;
+}
+
+.differense__image {
+	height: 190px;
+	width: 190px;
+	border-radius: 50%;
+	margin-right: 25px;
+}
+
+.differense__image_1 {
+	background-image: url(../img/about_1.png);
+}
+
+.differense__image_2 {
+	background-image: url(../img/about_2.png);
+}
+
+.differense__image_3 {
+	background-image: url(../img/about_3.png);
+}
+
+.differense__image_4 {
+	background-image: url(../img/about_4.png);
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1200px) {
+	.differense__item {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.differense__image {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.differense {
+		padding: 50px 50px;
+	}
+
+	.differense__item-title {
+		font-size: 20px;
+	}
+
+	.differense__text {
+		font-size: 14px;
+	}
+}
